@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1959288 */
+  src: url('//at.alicdn.com/t/font_1959288_1x4ms1nbi6e.eot');
+  src: url('//at.alicdn.com/t/font_1959288_1x4ms1nbi6e.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1959288_1x4ms1nbi6e.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1959288_1x4ms1nbi6e.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1959288_1x4ms1nbi6e.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1959288_1x4ms1nbi6e.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 70rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 下 返回  */
+.icon-ren:before {
+  content: "\e619";
+}
+.icon-ren2:before {
+  content: "\e622";
+}
+.icon-ren111:before {
+  content: "\e623";
+}
+.icon-renshu:before {
+  content: "\e61f";
+}
+.icon-ren-copy:before {
+  content: "\e63a";
+}
+.icon-iconrenxiang:before {
+  content: "\e60f";
+}
+.icon-renyuan-05:before {
+  content: "\e630";
+}
+.icon-renyuan-05:before {
+  content: "\e620";
+}
+
