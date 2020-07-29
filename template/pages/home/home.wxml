@@ -1,92 +1,136 @@
 <cu-custom bgColor="bg-orange">
-  <view slot="content">ColorUI </view>
+	<view slot="content">ColorUI </view>
 </cu-custom>
 <!-- 菜单 -->
 <view class="bg-orange padding choose-top">
-  <view class="grid col-4 grid-square">
-    <view class="bg-img" ><view class='iconfont icon-ren'></view>个人中心</view>
-    <view class="bg-img" bindtap="showModal" data-target="bottomModal"><view class="number" >1</view>加入的社群 </view>
-    <view class="bg-img" ><view class="number ">1</view>跟团订单</view>
-    <view class="bg-img" ><view class='iconfont icon-renyuan-05'></view>一键开团</view>
-  </view>
+	<view class="grid col-4 grid-square">
+		<view class="bg-img">
+			<view class='iconfont icon-ren'></view>个人中心
+		</view>
+		<view class="bg-img" bindtap="showModal" data-target="bottomModal">
+			<view class="number">1</view>加入的社群
+		</view>
+		<view class="bg-img">
+			<view class="number ">1</view>跟团订单
+		</view>
+		<view class="bg-img">
+			<view class='iconfont icon-renyuan-05'></view>一键开团
+		</view>
+	</view>
 </view>
 <!-- 搜索 -->
 <view class="box">
-  <view class="cu-bar search bg-white">
-    <view class="search-form round">
-      <text class="cuIcon-search"></text>
-      <input type="text" placeholder="搜索活动标题" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <button class="cu-btn bg-orange shadow-blur round">搜索</button>
-    </view>
-  </view>
-  </view>
+	<view class="cu-bar search bg-white">
+		<view class="search-form round">
+			<text class="cuIcon-search"></text>
+			<input type="text" placeholder="搜索活动标题" confirm-type="search"></input>
+		</view>
+		<view class="action">
+			<button class="cu-btn bg-orange shadow-blur round">搜索</button>
+		</view>
+	</view>
+</view>
 <!-- 列表 -->
 <view class="cu-card dynamic" wx:for="{{isCard}}" wx:key="{{index}}">
-  <view class="cu-item shadow">
-    <view class="cu-list menu-avatar">
-      <view class="cu-item">
-        <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
-        <view class="content flex-sub">
-          <view>小课堂</view>
-          <view class="text-gray text-sm flex justify-between ">
-            2019年12月3日
-            <!-- <text>1236人查看 | 25次参与</text> -->
-            <view>
-              <text class="cuIcon-attentionfill margin-lr-xs "></text> 10
-              <text class="cuIcon-sponsorfill margin-lr-xs "></text> 20
-            </view>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view  class="flex justify-between Buyerlist">
-    <view>
-    动漫
-    </view>
-    <view  class=""style="float:right;">
-        <button class="cu-btn round line-orange share">
-          <text class="cuIcon-forwardfill"></text> 分享
-        </button>        
-    </view>
-    </view>
-    <view class="price text-red">
-      ￥0.01
-    </view>
-    <!-- 图片循环 -->
-    <view class="grid flex-sub padding-lr col-3 grid-square" id="grid-square">
-      <view class="bg-img" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);" wx:for="{{isCard}}" wx:key="{{index}}">
-      </view>
-    </view>
-    <!-- 购买人列表 -->
-    <view class="Buyerlist">
-      <view wx:for="{{isCard}}" wx:key="{{index}}" class="flex justify-between" >
-      <view class="flex">
-        <view class="serialNumber text-grey fontSize20"> 58</view>  
-        <view class="cu-avatar sm round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-        <view class="margin-left10 fontSize20">星星</view><view class="margin-left10 text-grey fontSize20">7分钟</view>
-      </view>
-      <view class="flex">
-        <view>看看（斤）</view> <view class="text-red text-right justify-between">+1</view>
-        </view>
-      </view>
-    </view>
-    <view class="text-gray text-sm padding">
-      正在跟团中
-    </view>
-    </view>
-    </view>
-    <!-- 底部窗口 -->
+	<view class="cu-item shadow">
+		<view class="cu-list menu-avatar">
+			<view class="cu-item">
+				<view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+				<view class="content flex-sub">
+					<view>小课堂</view>
+					<view class="text-gray text-sm flex justify-between ">
+						2019年12月3日
+						<!-- <text>1236人查看 | 25次参与</text> -->
+						<view>
+							<text class="cuIcon-attentionfill margin-lr-xs "></text> 10
+							<text class="cuIcon-sponsorfill margin-lr-xs "></text> 20
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="flex justify-between Buyerlist">
+			<view>
+				动漫
+			</view>
+			<view class="" style="float:right;">
+				<button class="cu-btn round line-orange share">
+					<text class="cuIcon-forwardfill"></text> 分享
+				</button>
+			</view>
+		</view>
+		<view class="price text-red">
+			￥0.01
+		</view>
+		<!-- 图片循环 -->
+		<view class="grid flex-sub padding-lr col-3 grid-square" id="grid-square">
+			<view class="bg-img" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);" wx:for="{{isCard}}" wx:key="{{index}}">
+			</view>
+		</view>
+		<!-- 购买人列表 -->
+		<view class="Buyerlist">
+			<view wx:for="{{isCard}}" wx:key="{{index}}" class="flex justify-between">
+				<view class="flex">
+					<view class="serialNumber text-grey fontSize20"> 58</view>
+					<view class="cu-avatar sm round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+					<view class="margin-left10 fontSize20">星星</view>
+					<view class="margin-left10 text-grey fontSize20">7分钟</view>
+				</view>
+				<view class="flex">
+					<view>看看（斤）</view>
+					<view class="text-red text-right justify-between">+1</view>
+				</view>
+			</view>
+		</view>
+		<view class="text-gray text-sm padding">
+			正在跟团中
+		</view>
+	</view>
+</view>
+<!-- 底部窗口 -->
 <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
-  <view class="cu-dialog">
-    <view class="cu-bar bg-white">
-      <view class="action text-black text-bold">共三个社群</view>
-      <view class="action text-blue" bindtap="hideModal">取消</view>
-    </view>
-    <view>
-      <view class="bg-yellow text-center light  text-orange subscribe">订阅后，团长发布活动时将第一时间通知您</view>
-      
-    </view>
-  </view>
+	<view class="cu-dialog">
+		<view class="cu-bar bg-white">
+			<view class="action text-black text-bold">共三个社群</view>
+			<view class="action text-blue" bindtap="hideModal"><text class="cuIcon-close lg text-gray"></text></view>
+		</view>
+		<view>
+			<view class="bg-yellow text-center light  text-orange subscribe">订阅后，团长发布活动时将第一时间通知您</view>
+			<!-- 社团搜索 -->
+			<view class="box">
+				<view class="cu-bar search bg-white">
+					<view class="search-form">
+						<text class="cuIcon-search"></text>
+						<input type="text" placeholder="输入社团名" confirm-type="search"></input>
+					</view>
+					<view class="action none">
+						<text class="text-orange">搜索</text>
+					</view>
+				</view>
+			</view>
+			<!-- 社团列表 -->
+			<view class="cu-list menu-avatar" >
+				<view class="cu-item" wx:for="{{isCard}}" wx:key="{{index}}">
+					<view class="cu-avatar radius lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81007.jpg);"></view>
+					<view class="content">
+						<view>
+							<text class="text-cut">伊泽瑞尔</text>
+						</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut"> 成员人数 3</text>
+						</view>
+					</view>
+					<view class="action">
+					<!-- <button class="cu-btn bg-orange shadow-blur lg" id="subscription">已订阅</button> -->
+					<button class="cu-btn shadow-blur lg" id="subscriptionOr">已订阅</button>
+					</view>
+					<view class="action">
+						<text class="cuIcon-more lg text-gray"  ></text>
+					</view>
+				</view>
+			</view>
+			<view class="marging20">没有更多了</view>
+
+		</view>
+	</view>
 </view>
