@@ -1,0 +1,55 @@
+<!--pages/pickcargo/add/add.wxml-->
+<cu-custom bgColor="bg-orange" isBack="{{true}}">
+ <view slot="backText"></view>
+	<view slot="content">新增提货点</view>
+</cu-custom>
+<form>
+	<view class=" margin-top  cu-form-group bg-white">
+		<view class="title">提货点名称</view>
+		<input  placeholder="提货点简称(必填)"></input>
+	</view>
+  	<view class="cu-form-group">
+		<view class="title">位置</view>
+		<input placeholder="提货点位置(必填)"></input>
+		<text class="cuIcon-locationfill text-orange"></text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">详细地址</view>
+		<input placeholder="详细地址(必填)"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">提货点联系人</view>
+		<input placeholder="请输入提货点联系人"></input>
+	</view>
+
+
+	<view class="cu-form-group">
+		<view class="title">提货点电话</view>
+		<input placeholder="请输入提货点电话"></input>
+		<view class="cu-capsule radius">
+			<view class="cu-tag bg-orange">
+				+86
+			</view>
+			<view class="cu-tag line-orange">
+				中国大陆
+			</view>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">负责团长</view>
+		  <view class="flex  padding-top-sm padding-bottom-sm justify-end">
+      <view>
+      <view class="line-orange xs"bindtap="set">
+        <text>去设置</text>
+       <text class="cuIcon-right text-orange"></text>
+      </view>
+    </view>
+     </view > 
+		
+	</view>
+</form>
+ <button class="cu-btn block bg-orange margin-sm lg" bindtap="confirm">确认</button>
+ <view class="text-center line-orange xs"bindtap="get">
+        <text>从微信地址列表获取</text>
+       <text class="cuIcon-right text-orange"></text>
+      </view>

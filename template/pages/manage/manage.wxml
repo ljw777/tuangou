@@ -1,0 +1,58 @@
+<!--pages/pickcargo/manage/manager.wxml-->
+<cu-custom bgColor="bg-orange" isBack="{{true}}">
+ <view slot="backText"></view>
+	<view slot="content">提货点管理 </view>
+</cu-custom>
+ <view class="cu-item arrow">
+      <navigator class="nav-li bg-mauve" url="/pages/pickcargo/add/add" hover-class="none">
+      <view class="r">
+   <button class="cu-btn block bg-orange margin-tb-sm lg"> <text class="cuIcon-add text-white"></text>新增提货点</button>
+   
+</view>
+      </navigator>
+    </view>
+
+<view class='list'>
+    <view class='padding-left padding-right bg-white margin-top' wx:for='{{list}}' wx:key=''>
+    <view class='flex padding-top-sm padding-bottom-sm'>
+    <text class=" flex-sub text-cut">提货点:</text>
+    <text class="flex-treble text-cut">乐凯大厦</text>
+    </view>
+    
+      <view class='flex padding-top-sm padding-bottom-sm'>
+    <text class="flex-sub text-cut">详细地址:</text>
+    <text class="flex-treble text-cut">商城路乐凯大厦1805室商城路乐凯大厦1805室商城路乐凯大厦1805室</text>
+    </view>
+     
+    <view class='flex padding-top-sm padding-bottom-sm'>
+    <text class="flex-sub text-cut">提货联系人:</text>
+    <text class="flex-treble text-cut">呼呼</text>
+    </view>
+
+     <view class='flex padding-top-sm padding-bottom-sm'>
+    <text class="flex-sub text-cut">提货电话:</text>
+    <text class="flex-treble text-cut">180626587545</text>
+    </view>
+     <view class='link-top'></view>
+    <view>
+   
+    <view class="flex justify-between">
+
+    <view class=" padding-top-sm padding-bottom-sm">
+       <button class="cu-btn  line-orange xs">
+    <text></text>设置负责团长</button>
+    </view > 
+   
+    <view class="flex  padding-top-sm padding-bottom-sm justify-end">
+    <button class=" cu-btn margin-right line-orange xs">
+    <text></text>作废</button>
+    <button class=" cu-btn  line-orange xs">
+    <text></text>修改</button>
+     </view > 
+    </view>
+   
+    
+    
+    </view>
+    </view>
+</view>

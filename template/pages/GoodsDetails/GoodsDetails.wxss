@@ -1,0 +1,155 @@
+.cu-list.menu-avatar>.cu-item{
+  display: block;
+  background-color: var(--orange);
+  overflow: hidden;
+	/* height: calc(100% - 80%); */
+  height: 200rpx;
+}
+#subscriptionAdd{
+  padding: 0 0rpx;
+  font-size: 22rpx;
+  height: 40rpx;
+  width: 85rpx;
+  opacity: 1;
+  color: #f37b1d;
+  background-color: white;
+  margin-top: 10rpx;
+}
+.cu-list.menu-avatar>.cu-item .content{
+  left: 160rpx;
+}
+.detailsPeople{
+  
+}
+.cu-list.menu-avatar>.cu-item{
+  padding-top: 40rpx;
+}
+#HeadPortrait{
+  height: 100rpx;
+  width: 100rpx;
+}
+.padding30{
+  padding: 30rpx;
+}
+.title{
+  font-size: 38rpx;
+}
+.padding30 .cu-btn{
+  height: 40rpx;
+  padding: 0rpx 10rpx;
+}
+.margingTop20{
+  margin-top: 20rpx;
+}
+.margingTop10{
+  margin-top: 10rpx;
+}
+.font{
+  font-size: 24rpx;
+}
+.text-introduce{
+  font-size: 28rpx;
+}
+.paddingTop20{
+  padding-top: 20rpx;
+}
+
+
+
+
+.choose-top{
+  width: 690rpx;
+  margin: 30rpx;
+  border-radius: 30rpx;
+}
+.bg-img{
+  text-align: center;
+}
+.personal-iocn{
+  height: 150rpx;
+  width: 150rpx;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.number{
+  font-size: 70rpx;
+  /* padding-bottom: 12rpx; */
+  
+}
+.grid.grid-square>view{
+  margin-bottom: -10rpx;
+}
+.share{
+  height: 50rpx;
+  width: 150rpx;
+  line-height: 50rpx;
+  margin-left: 15rpx;
+}
+#grid-square{
+  margin-bottom: 10rpx;
+}
+.price{
+  padding:  0rpx 30rpx;
+  font-size: 44rpx;
+  font-weight:700;
+  margin-bottom: 10rpx;
+}
+.cu-card.dynamic>.cu-item>.text-content{
+  margin-bottom: 0rpx;
+}
+.Buyerlist{
+  padding:  0rpx 30rpx;
+}
+.serialNumber{
+  width: 1.5rem;
+  text-align: center;
+}
+.Buyerlist view{
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.margin-left10{
+  margin-left: 10rpx;
+}
+.fontSize20{
+  font-size: 24rpx;
+}
+.cu-card>.cu-item {
+  margin:  30rpx 30rpx 30rpx 30rpx;
+}
+.cu-modal.bottom-modal .cu-dialog {
+  border-radius: 25rpx 25rpx 0rpx 0rpx;
+	height: calc(100% - 20%);
+}
+.subscribe{
+  padding: 20rpx;
+}
+.none{
+  display:none;
+}
+.cu-avatar.lg{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
+}
+.action .lg{
+  font-size: 46rpx;
+  opacity: 0.5;
+}
+#subscription{
+  padding: 0 0rpx;
+  font-size: 22rpx;
+  height: 50rpx;
+  opacity: 1;
+  width: 85rpx;
+}
+.marging20{
+  margin: 20rpx 0rpx;
+  opacity: 0.3;
+}
