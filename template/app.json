@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/manage/manage",
-    "pages/add/add",
     "pages/GoodsDetails/GoodsDetails",
+    "pages/manage/manage",
     "pages/home/home",
+    "pages/add/add",
     "pages/index/index"
   ],
   "window": {

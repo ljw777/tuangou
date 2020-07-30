@@ -53,7 +53,51 @@
 .paddingTop20{
   padding-top: 20rpx;
 }
+.add-icon{
+  float:right;
+  font-size: 40rpx;
+}
+.cu-card.article>.cu-item .content .text-content{
+  height: 2em;
+  line-height: 2em;
+}
+.bQuantity{
+  font-size: 22rpx;
+  float:right;
+}
+.WithRecord{
+  padding: 32rpx;
+}
+.WithRecord .title{
+  font-size: 30rpx;
+}
+.Record-item{
 
+}
+.buyer-item{
+  font-size: 20rpx;
+}
+.WithRecord .portrait{
+  height: 60rpx;
+  width: 60rpx;
+  margin: 0rpx 10rpx;
+}
+.WithRecord .serialNumber{
+  height: 60rpx;
+  width: 40rpx;
+  line-height: 60rpx;
+  text-align: center;
+  opacity: 0.8;
+}
+.BuyField .submit{
+  width: 50%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.BuyField .shop{
+  left: 40rpx;
+}
 
 
 

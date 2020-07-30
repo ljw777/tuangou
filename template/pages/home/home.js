@@ -6,6 +6,11 @@ Page({
   data: {
     isCard: [1,2,3]
   },
+  goGoodsDetails(){
+    wx.navigateTo({
+      url: '/pages/GoodsDetails/GoodsDetails',
+    })
+  },
   isCard() {
     this.setData({
       isCard: [1,2,3]

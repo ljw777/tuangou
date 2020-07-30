@@ -4,11 +4,11 @@ const app = getApp()
 
 Page({
   data: {
-    isCard: [1,2,3]
+    isCard: [1,2,3,4,5]
   },
   isCard() {
     this.setData({
-      isCard: [1,2,3]
+      isCard: [1,2,3,4,5]
     })
   },
   showModal(e) {
