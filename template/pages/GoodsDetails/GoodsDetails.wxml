@@ -73,8 +73,6 @@
 		</view>
 	</view>
 </view>
-
-
 <!-- 底部 -->
 <view class="BuyField cu-bar foot bg-white">
   <view class="cu-bar  border shop ">
