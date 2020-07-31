@@ -18,10 +18,11 @@
   fill: currentColor;
   overflow: hidden;
 }
-.number{
+.number , .iconView{
   font-size: 70rpx;
   /* padding-bottom: 12rpx; */
-  
+  height: 90rpx;
+  line-height: 90rpx;
 }
 .grid.grid-square>view{
   margin-bottom: -10rpx;
@@ -110,4 +111,20 @@
 .marging20{
   margin: 20rpx 0rpx;
   opacity: 0.3;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 80rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.indexFixed{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
 }

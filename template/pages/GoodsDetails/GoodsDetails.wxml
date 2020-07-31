@@ -8,7 +8,7 @@
 			<view class="cu-item">
 				<view class="cu-avatar lg" id="HeadPortrait" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
 				<view class="content flex-sub">
-					<view class="text-white">凯尔</view>
+					<view class="text-white text-bold">凯尔尔</view>
 					<view class="text-gray text-sm flex justify-between">
 						<button class="cu-btn shadow-blur lg" id="subscriptionAdd">+订阅</button>
 					</view>
@@ -21,7 +21,7 @@
 <view class="bg-white padding30">
 	<view class="title text-black ">
 		<span class="text-bold">测试 </span>
-		<button class="cu-btn line-orange " role="button" aria-disabled="false">快递/同城配送</button>
+		<button class="cu-btn line-orange text-bold">快递/同城配送</button>
 		<view class="text-grey font margingTop20">七天前 发布 |
 			<text class="text-orange">4天 20:56:25后结束</text> </view>
 		<view class="text-introduce margingTop20">
@@ -41,11 +41,11 @@
 				</view>
 				<view class="text-grey ">背景：久光贴</view>
 				<view>
-					<view class="text-red bQuantity"> 已团购22件</view>
+					<view class="text-orange  bQuantity" style="font-size:28rpx;font-weight:500;"> 已团22</view>
 				</view>
 				<view class="justify-between" style="margin-top: 10rpx;">
-					<view class="text-content text-bold">
-						<text class="text-red">0.1</text>
+					<view class="text-content " style="font-size:30rpx">
+						<text class="text-orange " style="font-weight:750;font-size:35rpx;">0.1</text>
 						/斤
 						<text class="cuIcon-roundaddfill lg text-orange add-icon" ></text>
 					</view>
@@ -82,5 +82,33 @@
     </view>
   </view>
   <view class="bg-orange submit">现在参团</view>
+</view>
+
+<!-- 留言 -->
+<view class="LMessage bg-white margingTop20">
+	<view class="justify-between flex">
+	<view class="text-grey">已有0条留言，快来说说感想吧！</view>
+	<view class="text-orange">
+		<text class="cuIcon-new lg text-orange "></text>
+			留言
+	</view>
+	</view>
+</view>
+
+<!-- 投诉建议 -->
+<view class="Complaints-S flex text-grey">
+<view>
+	<view class="loge">
+	<text class="text-orange text-bold" >小团团</text>
+	</view>
+	<view>微信团购小程序</view>
+</view>
+<!-- <view class="border"></view> -->
+<view class="complaints">
+	<text class="cuIcon-warn lg text-orange"></text>
+	<view>投诉与建议</view>
+</view>
+</view>
+<view class="blank">
 
 </view>

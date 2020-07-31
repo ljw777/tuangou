@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    isCard: [1,2,3]
+    isCard: [1,2,3,1,2,3,1,2,3,1,2,3,]
   },
   goGoodsDetails(){
     wx.navigateTo({
@@ -13,7 +13,7 @@ Page({
   },
   isCard() {
     this.setData({
-      isCard: [1,2,3]
+      isCard: [1,2,3,1,2,3,1,2,3,1,2,3,]
     })
   },
   showModal(e) {

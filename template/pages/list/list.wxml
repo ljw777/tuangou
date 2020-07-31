@@ -1,0 +1,107 @@
+<cu-custom bgColor="bg-orange" isBack="{{true}}">
+ <view slot="backText"></view>
+	<view slot="content">商品库 </view>
+</cu-custom>
+<view class="home">
+   <view class="padding-sm bg-white">
+   <navigator class="nav-li bg-white" url="/pages/shop/add/add" hover-class="none">
+   <button class="cu-btn block  line-orange xs"> <text class="cuIcon-add text-orange"></text>添加商品</button>
+      </navigator>
+   
+    </view > 
+    
+     <view class="cu-bar search bg-white">
+    <view class="search-form radius">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索商品名称" confirm-type="search"></input>
+    </view>
+    <!-- <view class="action">
+      <button class="cu-btn bg-orange shadow-blur round">搜索</button>
+    </view> -->
+  </view>
+
+<view class="bg-white  padding-xs">
+<view class="bg-yellow light  padding-sm radius margin-sm text-sm">
+<view class="text-red">
+想要快速编辑商品库商品，请前往快团团电脑端 
+ <view class="">
+   <label class="text-red margin-right-xs">ktt.pinduoduo.com</label>  
+ <text class="cu-btn  line-red sm " bindtap="copy"> <text class=""></text>复制</text>
+    
+</view>
+</view>
+</view>
+</view>
+<view class="VerticalBox">
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 375rpx)">
+    <view class="cu-item {{index==TabCur?'text-orange cur':''}}" wx:for="{{list}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+     {{item.name}}
+    </view>
+    <view class="manger" bindtap="typeManager">分类管理<text class="cuIcon-right text-#f1f1f1"></text></view>
+  </scroll-view>
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view class="" wx:for="{{list}}" wx:key id="main-{{index}}">
+      <view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-green'></text> {{item.name}} </view>
+      </view>
+      <view class="cu-list menu-avatar" wx:for="{{list}}" wx:key id="main-{{index}}">
+          
+        <view class=" flex solid-bottom padding align-start">
+         <checkbox class="flex solid-bottom padding justify-start"></checkbox>
+       <view class="cu-avatar radius xl padding-sm  " style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
+          <view class="padding-left-sm  ">
+            <view class="text-black">苹果</view>
+              <view class="text-grey">大</view>
+                  <view class="text-grey">团长推荐</view>
+                      <view class="text-grey">库存12</view>
+                         <view class="text-orange">¥12</view>
+                           <view class="flex  padding-top-sm padding-bottom-sm justify-end">
+    <view class="margin-right-xl">
+   <text class="cuIcon-delete text-#f1f1f1" bindtap="delete"></text> 删除</view>
+    <view class=" ">
+    <text class="cuIcon-write text-#f1f1f1" bindtap="make"></text> 编辑</view>
+     </view > 
+     
+          </view>
+            
+        </view>
+   <view class='link-top '></view>
+    <view>  
+        </view>
+      
+      
+    
+      </view>
+
+    </view>
+    
+  </scroll-view>
+</view>
+
+ <view class="bg-white">
+
+<navigator class="nav-li bg-mauve" url="/pages/shop/add/add" hover-class="none">
+      <view class="r">
+         <view class="flex justify-end">
+    <lable class="num padding">共0件</lable>
+  <view class="open padding">去开团</view>
+     </view > 
+</view>
+      </navigator>
+    </view>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  </view>

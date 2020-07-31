@@ -9,7 +9,7 @@
   padding: 0 0rpx;
   font-size: 22rpx;
   height: 40rpx;
-  width: 85rpx;
+  width: 100rpx;
   opacity: 1;
   color: #f37b1d;
   background-color: white;
@@ -35,8 +35,9 @@
   font-size: 38rpx;
 }
 .padding30 .cu-btn{
-  height: 40rpx;
+  height: 34rpx;
   padding: 0rpx 10rpx;
+  font-size: 20rpx;
 }
 .margingTop20{
   margin-top: 20rpx;
@@ -55,7 +56,7 @@
 }
 .add-icon{
   float:right;
-  font-size: 40rpx;
+  font-size: 50rpx;
 }
 .cu-card.article>.cu-item .content .text-content{
   height: 2em;
@@ -65,11 +66,11 @@
   font-size: 22rpx;
   float:right;
 }
-.WithRecord{
-  padding: 32rpx;
+.WithRecord , .LMessage{
+  padding: 28rpx 32rpx 32rpx 32rpx;
 }
 .WithRecord .title{
-  font-size: 30rpx;
+  font-size: 32rpx;
 }
 .Record-item{
 
@@ -78,8 +79,8 @@
   font-size: 20rpx;
 }
 .WithRecord .portrait{
-  height: 60rpx;
-  width: 60rpx;
+  height: 70rpx;
+  width: 70rpx;
   margin: 0rpx 10rpx;
 }
 .WithRecord .serialNumber{
@@ -98,6 +99,40 @@
 .BuyField .shop{
   left: 40rpx;
 }
+.cu-card.article>.cu-item .content>image{
+  width: 180rpx;
+}
+.buyer-item{
+  font-size: 28rpx;
+}
+.buyer-item .text-grey{
+  font-size: 24rpx;
+}
+.Complaints-S{
+  width: 100%;
+  padding-top: 30rpx;
+}
+.Complaints-S view{
+  width: 100%;
+  text-align: center;
+}
+.complaints{
+  border-left:2rpx solid RGB(170,170,170,0.5);
+}
+.complaints text{
+  font-size: 55rpx;
+}
+.loge{
+  font-size:35rpx;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.blank{
+  height: 300rpx;
+}
+
+
+
 
 
 

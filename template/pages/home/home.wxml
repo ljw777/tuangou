@@ -1,3 +1,4 @@
+<view class="indexPage {{modalName=='bottomModal'?'indexFixed':''}}">
 <cu-custom bgColor="bg-orange">
 	<view slot="content">ColorUI </view>
 </cu-custom>
@@ -5,16 +6,19 @@
 <view class="bg-orange padding choose-top">
 	<view class="grid col-4 grid-square">
 		<view class="bg-img">
-			<view class='iconfont icon-ren'></view>个人中心
+			<view class='iconView'>
+				<text class="icon-gerenzhongxin5 lg text-white iconfont" style="font-size:70rpx;"></text>
+			</view>
+			个人中心
 		</view>
 		<view class="bg-img" bindtap="showModal" data-target="bottomModal">
 			<view class="number">1</view>加入的社群
 		</view>
 		<view class="bg-img">
-			<view class="number ">1</view>跟团订单
+			<view class="number">1</view>跟团订单
 		</view>
 		<view class="bg-img">
-			<view class='iconfont icon-renyuan-05'></view>一键开团
+			<view class='iconfont icon-jiarujiazu'></view>一键开团
 		</view>
 	</view>
 </view>
@@ -89,6 +93,8 @@
 <!-- </navigator> -->
 	</view>
 </view>
+</view>
+
 <!-- 底部窗口 -->
 <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
 	<view class="cu-dialog">
@@ -98,6 +104,7 @@
 		</view>
 		<view>
 			<view class="bg-yellow text-center light  text-orange subscribe">订阅后，团长发布活动时将第一时间通知您</view>
+			
 			<!-- 社团搜索 -->
 			<view class="box">
 				<view class="cu-bar search bg-white">
@@ -111,6 +118,12 @@
 				</view>
 			</view>
 			<!-- 社团列表 -->
+			<scroll-view
+  scroll-y style="width: 100%; height: 1050rpx;"
+  refresher-enabled="{{true}}"
+  refresher-threshold="{{80}}"
+  refresher-default-style="none"
+  refresher-background="lightgreen">
 			<view class="cu-list menu-avatar" >
 				<view class="cu-item" wx:for="{{isCard}}" wx:key="{{index}}">
 					<view class="cu-avatar radius lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81007.jpg);"></view>
@@ -132,7 +145,9 @@
 				</view>
 			</view>
 			<view class="marging20">没有更多了</view>
+			</scroll-view>
 
 		</view>
 	</view>
 </view>
+

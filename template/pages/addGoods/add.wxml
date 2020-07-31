@@ -1,0 +1,104 @@
+<cu-custom bgColor="bg-orange" isBack="{{true}}">
+ <view slot="backText"></view>
+	<view slot="content">添加商品 </view>
+</cu-custom>
+<form>
+	<view class="cu-form-group">
+		<view class="title">名称</view>
+		<input placeholder="请输入商品名称"></input>
+		<text class="text-orange">(必填)</text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">价格</view>
+		<input placeholder="0.00"></input>
+		<text class="text-orange">(必填)</text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">规格</view>
+		<input placeholder="请输入单个规格名称"></input>
+		<text class="text-orange">添加多规格</text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">库存</view>
+		<input placeholder="不限"></input>
+	
+	</view>
+	<view class="cu-form-group">
+		<view class="title">划线价(¥)</view>
+		<input placeholder="请输入划线价，如19.9(选填)"></input>
+	
+	</view>
+<view class="cu-form-group">
+		<view class="title">标签</view>
+    	<input placeholder="(添加标签会有效提升购买)"></input>
+    <view class="">去添加 <text class="cuIcon-right text-#f1f1f1"></text></view>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">描述</view>
+		<input placeholder="请输入商品描述,最多2000个字"></input>
+		</view>
+    <view class="cu-form-group">
+		<view class="title">分类</view>
+    	
+    <view class="">未分类 <text class="cuIcon-right text-#f1f1f1"></text></view>
+	</view>
+  	<view class="cu-bar bg-white margin-top">
+		<view class="action text-black">
+			图片上传  <label class="text-black margin-left-xs">(最多9张)</label>
+		</view>
+		<view class="action">
+			{{imgList.length}}/4
+		</view>
+	</view>
+  <view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+</form>
+
+<view class=" padding-sm  margin-xs text-xs">
+<view class="text-#f1f1f1">温馨提示:修改商品库信息不会同步和影响线上已开团的同一商品
+ <view class="text-#f1f1f1">
+   <label class="margin-right-xs">的信息详情</label>  
+ </view>
+</view>
+</view>
+<view class=" padding-sm  margin-xs text-xs">
+<view class="text-#f1f1f1">
+ <view class="text-#f1f1f1">
+   <label class="margin-right-xs"></label>  
+ </view>
+</view>
+</view>
+<view class=" padding-sm  margin-xs text-xs">
+<view class="text-#f1f1f1">
+ <view class="text-#f1f1f1">
+   <label class="margin-right-xs"></label>  
+ </view>
+</view>
+</view>
+<view class=" padding-sm  margin-xs text-xs">
+<view class="text-#f1f1f1">
+ <view class="text-#f1f1f1">
+   <label class="margin-right-xs"></label>  
+ </view>
+</view>
+</view>
+ <view class="cu-item arrow">
+    <view class="r">
+   <button class="cu-btn block bg-orange margin-tb-sm lg"> <text class=""></text>确认添加</button>
+   
+</view>
+     
+    </view>
+
+   
