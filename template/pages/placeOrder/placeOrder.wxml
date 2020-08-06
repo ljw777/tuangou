@@ -1,0 +1,65 @@
+<!--pages/placeOrder/placeOrder.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}">
+	<view slot="backText"></view>
+	<view slot="content">下单 </view>
+</cu-custom>
+<!-- 添加地址 -->
+<view class="placeOrderView flex">
+	<view class="icon-dizhi1 lg text-orange iconfont"></view>
+	<view class="addressText">请填写收货地址</view>
+	<view class="arrow">
+		<text class="cuIcon-right lg text-gray "></text>
+	</view>
+</view>
+<!-- 商品信息 -->
+<view>
+	<view class="cu-card  article ">
+		<view class="cu-item shadow">
+			<view class="content ">
+				<image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="aspectFill"></image>
+				<view class="desc" style="height: 175rpx;">
+					<view class="text-black " style="font-size: 30rpx;">久光贴2包</view>
+					<view class="text-grey" style="font-size:28rpx">7片/包*2</view>
+					<view></view>
+					<view></view>
+					<view class="justify-between flex" style="margin-top: 10rpx;font-size:30rpx">
+						<view class="text-orange " style="font-weight:750;font-size:35rpx;">￥90</view>
+						<view class="number">x1</view>
+					</view>
+				</view>
+			</view>
+			<view class="CommodityPrice">
+				<view class="Horizontal-line"></view>
+				<view style="opacity:0.8">
+					<text>商品总价</text>
+					<text  class="right">￥90</text>
+				</view>
+				<view class="margin-top10 right">
+					<text style="opacity:0.8">共1件</text>
+					<text> 实际支付</text>
+					<text class="text-orange"> ￥90</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 备注 -->
+<view class="placeOrderView flex">
+	<text class="NoteText">备注</text>
+	<input placeholder="请输入您需要备注的内容" class="noteInput"></input>
+</view>
+
+<!-- 底部 -->
+<view class="BuyField cu-bar foot bg-white">
+	<view class="cu-bar  border shop ">
+		<view style="margin-left:20rpx;">
+			<span class='text-black'>实付金额:</span>
+			<span class='text-orange'> ￥90 </span>
+		</view>
+	</view>
+	<view class="submitView" bindtap="">
+		<view class="submit bg-orange">
+      立即支付
+		</view>
+	</view>
+</view>

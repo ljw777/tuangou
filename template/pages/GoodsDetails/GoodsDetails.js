@@ -11,6 +11,11 @@ Page({
       isCard: [1,2,3,4,5]
     })
   },
+  GoplaceOrder(){
+    wx.navigateTo({
+      url: '/pages/placeOrder/placeOrder',
+    })
+  },
   showModal(e) {
     this.setData({
       modalName: e.currentTarget.dataset.target

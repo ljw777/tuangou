@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/add/add",
-    "pages/manage/manage",
-    "pages/list/list",
-    "pages/addGoods/add",
+    "pages/placeOrder/placeOrder",
     "pages/home/home",
+    "pages/manage/manage",
+    "pages/add/add",
+    "pages/addGoods/add",
     "pages/GoodsDetails/GoodsDetails",
+    "pages/list/list",
     "pages/index/index"
   ],
   "window": {

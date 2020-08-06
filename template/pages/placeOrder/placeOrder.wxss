@@ -1,0 +1,75 @@
+/* pages/placeOrder/placeOrder.wxss */
+.placeOrderView{
+  margin: 30rpx 30rpx 0rpx 30rpx;
+  background-color: white;
+  padding: 30rpx 20rpx 30rpx 20rpx;
+  border-radius: 5rpx;
+}
+.addressText{
+  height: 58rpx;
+  line-height: 58rpx;
+  margin-left: 20rpx;
+}
+.arrow{
+  flex: 1;
+  text-align: right;
+}
+.arrow text{
+  height: 58rpx;
+  line-height: 58rpx;
+  font-size: 30rpx;
+}
+.cu-card.article>.cu-item {
+  padding: 30rpx 0rpx;
+}
+.cu-card.article>.cu-item .content>image {
+  width: 180rpx;
+  height: 180rpx;
+  height: 6.4em;
+  margin-right: 20rpx;
+  border-radius: 6rpx; 
+}
+.number{
+  flex: 1;
+  text-align: right;
+}
+.Horizontal-line{
+  height:2rpx;
+  width:100%;
+  background-color: rgb(0, 0, 0,0.05);
+  margin: 20rpx 0rpx;
+}
+.CommodityPrice{
+  padding: 0rpx 30rpx ;
+}
+.margin-top10{
+  margin-top: 10rpx;
+}
+.right{
+  float: right;
+}
+.NoteText{
+  height: 28.97px;
+  line-height: 28.97px;
+  font-size:28.97rpx;
+}
+.noteInput{
+  margin-left: 20rpx;
+}
+.BuyField .submitView{
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.BuyField .submit{
+  text-align: center;
+  float: right;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  width: 50%;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+}
+  
+  

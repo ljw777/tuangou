@@ -81,7 +81,7 @@
     <span class='text-orange'>  ￥0 </span>
     </view>
   </view>
-  <view class="bg-orange submit">现在参团</view>
+  <view class="bg-orange submit"  bindtap="GoplaceOrder">现在参团</view>
 </view>
 
 <!-- 留言 -->
